@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+
+<title>JavaScript4</title>
+<meta name="description" content="rgb picker">
+<meta name="keywords" content="rgb, prompt">
+
+<script type="text/JavaScript">
+
+function rgb()
+{
+	var r = prompt('Input a number 0-255', '0')
+	while (0 > r || r > 255)
+	if (0 < r && r < 255)
+		alert('You have selected ' + r + ' as your first number')
+	else
+		r = prompt('Try again.', '0')
+	var g = prompt('Input another number 0-255', '0')
+	while (0 > g || g > 255)
+	if (0 < g && g < 255)
+		alert('You have selected ' + g + ' as your first number')
+	else
+		g = prompt('Try again.', '0')
+	var b = prompt('Input another number 0-255', '0')
+	while (0 > b || b > 255)
+	if (0 < b && b < 255)
+		alert('You have selected ' + b + ' as your first number')
+	else
+		b = prompt('Try again.', '0')
+	document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+}
+
+</script>
+
+</head>
+<body onload="rgb();">
+
+
+
+</body>
+</html>
