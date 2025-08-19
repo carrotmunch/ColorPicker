@@ -10,24 +10,28 @@
 
 function rgb()
 {
-	var r = prompt('Input a number 0-255', '0')
+	alert('RGB Color picker, input an RGB sequence and it will make that color the background!')
+	
+	var r = prompt('Input a number for red, 0-255', '0')
 	while (0 > r || r > 255)
-	if (0 < r && r < 255)
-		alert('You have selected ' + r + ' as your first number')
-	else
 		r = prompt('Try again.', '0')
-	var g = prompt('Input another number 0-255', '0')
+	if (0 < r && r < 255)
+		alert('You have selected ' + r + ' for red')
+	
+	var g = prompt('Input a number for green, 0-255', '0')
 	while (0 > g || g > 255)
-	if (0 < g && g < 255)
-		alert('You have selected ' + g + ' as your first number')
-	else
 		g = prompt('Try again.', '0')
-	var b = prompt('Input another number 0-255', '0')
+	if (0 < g && g < 255)
+		alert('You have selected ' + g + ' for green')
+	
+	
+	var b = prompt('Input a number for blue, 0-255', '0')
 	while (0 > b || b > 255)
-	if (0 < b && b < 255)
-		alert('You have selected ' + b + ' as your first number')
-	else
 		b = prompt('Try again.', '0')
+	if (0 < b && b < 255)
+		alert('You have selected ' + b + ' for blue')
+
+	alert('The color you chose is ' + r + ', ' + g + ' , ' + b) 
 	document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 }
 
